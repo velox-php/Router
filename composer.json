@@ -1,0 +1,41 @@
+{
+    "name": "velox/router",
+    "description": "Router component for velox",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Velox\\Router\\": "src/",
+            "Velox\\Router\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Robert Snedeker",
+            "email": "rsnedeker20@gmail.com",
+            "homepage": "https://robertsnedeker.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "httpsoft/http-emitter": "^1.0",
+        "httpsoft/http-response": "^1.0",
+        "httpsoft/http-message": "^1.0.12",
+        "httpsoft/http-server-request": "^1.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.16",
+        "pestphp/pest": "^2.35"
+    },
+    "scripts": {
+        "fix": "php-cs-fixer fix --using-cache=no",
+        "fix:dry": "php-cs-fixer fix --using-cache=no --diff --dry-run",
+        "test": "pest"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
