@@ -2,7 +2,6 @@
     "name": "velox/router",
     "description": "Router component for velox",
     "type": "library",
-    "version": "1.0.0",
     "license": "MIT",
     "autoload": {
         "psr-4": {
